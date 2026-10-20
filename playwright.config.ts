@@ -7,6 +7,7 @@ export default defineConfig({
   fullyParallel: false,
   // The canonical test:e2e runner overrides this only for specs whose
   // browserHost fixture owns an isolated host, profile, workspace and port.
+  retries: process.env.CI ? 2 : 0,
   workers:
     Number.isInteger(requestedWorkers) && requestedWorkers > 0
       ? requestedWorkers

@@ -44,6 +44,10 @@ The fixture server port is chosen free by the runner. Set `SURI_E2E_PORT` to pin
 points) and `SURI_E2E_WORKERS=N` to change the isolated worker count. Install the
 browsers once with `npx playwright install chromium webkit`.
 
+Wall-clock budgets in e2e specs go through `perfBudget()` (`tests/e2e/perf-budget.ts`);
+set `SURI_E2E_PERF_SCALE=3` (>= 1) to multiply them on slower machines, as CI does. With
+`CI` set, Playwright retries failed tests twice and a test that passes on retry counts as flaky, not failed.
+
 ## Native shell (macOS, optional)
 
 `npm run package:macos` builds the SwiftUI shell into an ad-hoc signed `.app`, and

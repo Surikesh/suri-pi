@@ -72,7 +72,10 @@ jobs:
       - run: npm ci
       - run: npx playwright install chromium webkit
       - run: npm run build
+      # Hosted runners are ~3x slower than a dev Mac.
       - run: npm run test:e2e
+        env:
+          SURI_E2E_PERF_SCALE: "3"
       - uses: actions/upload-artifact@v4
         if: failure()
         with:

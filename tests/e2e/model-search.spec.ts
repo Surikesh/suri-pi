@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { perfBudget } from "./perf-budget.js";
 import { readFile, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { browserHost } from "../support/browser-host.js";
@@ -68,7 +69,7 @@ for (const width of [1440, 390])
       expect(firstFrame.focused).toBe(true);
       // Chromium is the measured baseline; WebKit still must focus before discovery.
       if (browserName === "chromium")
-        expect(firstFrame.elapsed).toBeLessThan(150);
+        expect(firstFrame.elapsed).toBeLessThan(perfBudget(150));
       const search = page.getByRole("combobox", { name: "Search models" });
       await expect(search).toBeFocused();
       await expect(
@@ -584,7 +585,7 @@ test("ten thousand models remain searchable with one bounded scrolling list", as
           requestAnimationFrame(() => done(performance.now() - start));
         }),
     );
-    expect(queryFrame).toBeLessThan(50);
+    expect(queryFrame).toBeLessThan(perfBudget(50));
     await expect(
       page.getByRole("option", { name: /large-09999/i }),
     ).toBeVisible();

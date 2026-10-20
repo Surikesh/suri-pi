@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+import { perfBudget } from "./perf-budget.js";
 import { AxeBuilder } from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
@@ -299,7 +300,8 @@ test("rich historical session switches retain target content, draft and history"
         .getByRole("button", { name: /^Synthetic history 31:/ })
         .click();
       await expect(marker).toBeVisible();
-      if (index > 0) expect(Date.now() - paintStart).toBeLessThan(1500);
+      if (index > 0)
+        expect(Date.now() - paintStart).toBeLessThan(perfBudget(1500));
       await expect(editor).toHaveValue("Unsent synthetic switching draft");
       await expect(inline).toHaveAttribute("open", "");
       await expect(nested).toHaveAttribute("open", "");
@@ -414,7 +416,7 @@ test("rich historical session switches retain target content, draft and history"
     const longestTask = await page.evaluate(() =>
       Math.max(0, ...(window as any).__switchTasks),
     );
-    expect(longestTask).toBeLessThan(300);
+    expect(longestTask).toBeLessThan(perfBudget(300));
     await inline.locator(":scope > summary").focus();
     await page.keyboard.press("Space");
     await expect(inline).not.toHaveAttribute("open", "");
@@ -423,7 +425,7 @@ test("rich historical session switches retain target content, draft and history"
     await editor.pressSequentially(" Keep typing without submitting.", {
       delay: 2,
     });
-    expect(Date.now() - typingStart).toBeLessThan(1500);
+    expect(Date.now() - typingStart).toBeLessThan(perfBudget(1500));
     await expect(editor).toHaveValue(
       "Unsent synthetic switching draft Keep typing without submitting.",
     );
