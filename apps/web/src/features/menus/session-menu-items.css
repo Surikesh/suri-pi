@@ -1,0 +1,55 @@
+.session-menu label {
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.session-menu input,
+.session-menu button {
+  width: 100%;
+}
+.session-menu button {
+  justify-content: flex-start;
+  gap: 9px;
+  min-height: 32px;
+  padding: 6px 8px;
+  text-align: left;
+}
+.session-menu button small {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 10px;
+  color: var(--muted);
+}
+.session-menu button svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+.session-menu > button:not(:has(svg)):not(:has(.menu-dot))::before {
+  content: "";
+  width: 16px;
+  flex: 0 0 16px;
+}
+.menu-separator {
+  height: 1px;
+  background: var(--line);
+  margin: 5px 2px;
+}
+.menu-dot {
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.menu-confirm {
+  margin: 4px 8px 7px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+.session-menu .danger {
+  color: #963d32;
+}

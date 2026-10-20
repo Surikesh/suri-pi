@@ -1,0 +1,1 @@
+{"type": "response", "command": "get_available_models", "success": true, "data": {"models": [{"id": "fixture", "provider": "synthetic", "name": "Fixture", "headers": {"Authorization": "synthetic-secret"}, "apiKey": "synthetic-secret"}]}}

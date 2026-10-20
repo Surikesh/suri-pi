@@ -1,0 +1,10 @@
+{
+  "id": "empty-no-file-resume",
+  "version": "0.84.4",
+  "commit": "b79e4cc834970cca69daebffab7df1da7d1e52c4",
+  "provenance": "independently authored synthetic fixture; fixture_exit is a process-driver directive, not a Pi event",
+  "driver": "client",
+  "expected": {
+    "scenario": "empty"
+  }
+}

@@ -1,0 +1,49 @@
+.updates-control {
+  flex: 0 1 auto;
+  min-width: 0;
+  font-size: 12px;
+}
+.updates-panel {
+  position: fixed;
+  z-index: 120;
+  top: 70px;
+  right: 20px;
+  width: min(420px, calc(100vw - 32px));
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px #20232920;
+}
+.updates-panel button {
+  min-height: 44px;
+}
+.updates-panel code,
+.updates-control dialog code {
+  overflow-wrap: anywhere;
+}
+.updates-control dialog {
+  width: min(460px, calc(100vw - 32px));
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: inherit;
+}
+.updates-control dialog::backdrop {
+  background: #20232966;
+}
+.updates-control dialog h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.updates-panel p {
+  margin: 0 0 12px;
+}
+@media (max-width: 760px) {
+  .updates-control {
+    order: 4;
+    flex-basis: 100%;
+  }
+}

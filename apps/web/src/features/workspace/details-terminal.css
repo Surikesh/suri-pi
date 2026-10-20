@@ -1,0 +1,58 @@
+.workspace-details .terminal-pane {
+  margin: 0;
+  background: #f7f8fb;
+  overflow: hidden;
+}
+.workspace-details .terminal {
+  min-height: 0;
+  padding: 10px;
+  background: #f7f8fb;
+}
+.workspace-details .terminal .xterm {
+  height: 100%;
+}
+.workspace-details .terminal .xterm-viewport {
+  background: #f7f8fb !important;
+  scrollbar-color: #c4c8d3 #f7f8fb;
+}
+@container (min-width: 650px) {
+  .changes-review {
+    flex-direction: row;
+  }
+  .changes-sidebar {
+    flex: 0 0 230px;
+    max-height: none;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+  .file-browser.has-preview {
+    flex-direction: row-reverse;
+  }
+  .has-preview .file-navigation {
+    flex: 0 0 240px;
+    border-left: 1px solid var(--line);
+  }
+  .workspace-details .file-preview {
+    border-top: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .workspace-details.details {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+  }
+  .workspace-details.details.expanded {
+    inset: 0;
+  }
+}
+@media (max-width: 480px) {
+  .workspace-details .detail-top button {
+    padding-inline: 5px;
+    font-size: 12px;
+  }
+  .file-document {
+    padding-inline: 15px;
+  }
+}

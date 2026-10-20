@@ -1,0 +1,16 @@
+.preview-banner {
+  flex: none;
+  padding: 8px 16px;
+  color: #714b0b;
+  background: #fff4d9;
+  border-bottom: 1px solid #ead5a9;
+  font-size: 12px;
+  line-height: 1.4;
+}
+main {
+  position: relative;
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

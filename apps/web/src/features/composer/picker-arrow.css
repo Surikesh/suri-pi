@@ -1,0 +1,9 @@
+.picker > button::after {
+  content: "⌄";
+  margin-left: 5px;
+  color: var(--muted);
+}
+.composer .picker > button::after {
+  display: none;
+  content: "";
+}

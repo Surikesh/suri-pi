@@ -1,0 +1,57 @@
+.workspace-details.details {
+  position: relative;
+  padding: 0;
+  min-height: 0;
+  container-type: inline-size;
+  background: #f7f8fb;
+}
+.workspace-details.expanded {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: 6;
+}
+.details-resizer {
+  position: absolute;
+  inset: 0 auto 0 -4px;
+  width: 8px;
+  cursor: col-resize;
+  touch-action: none;
+  z-index: 2;
+}
+.details-resizer::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 4px;
+  width: 1px;
+  background: transparent;
+}
+.details-resizer:hover,
+.details-resizer:focus-visible {
+  outline: none;
+}
+.details-resizer:hover::after,
+.details-resizer:focus-visible::after {
+  background: var(--accent);
+}
+.workspace-details .detail-top {
+  padding: 8px 10px;
+  min-height: 60px;
+  border-bottom: 1px solid var(--line);
+  flex: none;
+  gap: 3px;
+}
+.workspace-details .detail-top [role="tablist"] {
+  flex: 1;
+  min-width: 0;
+}
+.workspace-details .detail-top button {
+  padding: 5px 8px;
+}
+.workspace-details .detail-body {
+  padding: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}

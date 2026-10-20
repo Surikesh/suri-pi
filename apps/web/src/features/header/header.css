@@ -1,0 +1,35 @@
+header {
+  height: 60px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+  flex: none;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+.heading strong {
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.session-title {
+  align-self: flex-start;
+  justify-content: flex-start;
+  min-height: 20px;
+  padding: 0;
+  min-width: 0;
+  max-width: 100%;
+}
+.session-title strong {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

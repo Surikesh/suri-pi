@@ -1,0 +1,13 @@
+.change-preview-header > div:first-child {
+  flex-basis: 100%;
+}
+.change-preview-header strong {
+  flex: 1;
+  font-size: 12px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.change-actions button {
+  min-height: 30px;
+  font-size: 11px;
+}

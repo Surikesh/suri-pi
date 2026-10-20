@@ -1,0 +1,126 @@
+.shell {
+  display: flex;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+.sidebar {
+  width: var(--sidebar-width, 232px);
+  flex: none;
+  background: #f7f8fa;
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  padding: 12px 10px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 34px;
+  margin: 0 6px 18px;
+}
+.brand strong {
+  font-size: 15px;
+}
+.brand-mark,
+.empty-mark {
+  display: block;
+  object-fit: contain;
+  flex: none;
+  width: 28px;
+  height: 28px;
+}
+.brand .icon-button {
+  margin-left: auto;
+  color: var(--muted);
+}
+.new-session {
+  justify-content: flex-start;
+  background: white;
+  border: 1px solid #dee2e9;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  position: relative;
+}
+.search > input {
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 5px 0 5px 12px;
+  font-size: 12px;
+}
+.search > svg {
+  flex: none;
+  width: 14px;
+}
+.search button {
+  padding: 3px;
+}
+.view-options {
+  position: absolute;
+  z-index: 20;
+  inset: calc(100% + 5px) 0 auto auto;
+  width: min(224px, calc(100vw - 24px));
+  padding: 7px;
+  color: #202329;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 12px 36px #20232925;
+}
+.view-options strong {
+  display: block;
+  padding: 7px 8px 3px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+}
+.view-options button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 30px;
+  gap: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.view-options [role="menuitemradio"]::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: transparent;
+}
+.view-options [role="menuitemradio"][aria-checked="true"]::before {
+  background: var(--accent);
+}
+.view-options .filter-option {
+  color: var(--muted);
+  font-weight: 400;
+}
+.view-options .filter-option::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+}
+.view-options .filter-option[aria-checked="true"] {
+  color: #202329;
+  font-weight: 600;
+}
+.sidebar nav {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  scrollbar-width: none;
+}

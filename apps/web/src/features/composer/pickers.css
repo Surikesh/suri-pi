@@ -1,0 +1,83 @@
+.picker {
+  position: relative;
+}
+.picker-menu {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 6px);
+  z-index: 8;
+  width: max-content;
+  min-width: 170px;
+  max-width: min(320px, 80vw);
+  max-height: 260px;
+  overflow: auto;
+  padding: 5px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  box-shadow: 0 10px 30px #20232920;
+}
+.model-search-menu {
+  left: auto;
+  right: 0;
+  width: min(420px, calc(100vw - 24px));
+  max-width: calc(100vw - 24px);
+  max-height: min(420px, 65vh);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.model-search-menu > input {
+  width: 100%;
+  min-height: 36px;
+  box-sizing: border-box;
+}
+.model-status-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.model-search-options {
+  min-height: 0;
+  flex: 0 1 auto;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #7c7c7c transparent;
+}
+.model-search-options::-webkit-scrollbar {
+  width: 9px;
+}
+.model-search-options::-webkit-scrollbar-track {
+  background: transparent;
+}
+.model-search-options::-webkit-scrollbar-thumb {
+  background: #7c7c7c;
+  border-radius: 9px;
+}
+.model-search-options button .model-search-label {
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.picker-menu button {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.picker-menu [aria-selected="true"] {
+  color: var(--accent);
+  background: #eef1f8;
+}
+.picker-empty {
+  display: block;
+  padding: 7px 9px;
+  color: var(--muted);
+  font-size: 11px;
+}

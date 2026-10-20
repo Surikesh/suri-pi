@@ -1,0 +1,240 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #20232940;
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  padding: 20px;
+}
+.modal {
+  width: min(470px, 100%);
+  max-height: 85dvh;
+  overflow: auto;
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 14px 80px #20232930;
+}
+.new-session-backdrop {
+  position: absolute;
+  background: #2023292e;
+}
+.new-session-dialog {
+  width: min(430px, 100%);
+  padding: 18px;
+  border: 1px solid #dfe2e9;
+  box-shadow: 0 18px 64px #2023292b;
+}
+.new-session-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.new-session-heading kbd {
+  margin: 0;
+}
+.new-session-project-field > span:first-child {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+.new-session-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 10px;
+  border: 1px solid #cfd4df;
+  border-radius: 8px;
+  background: #fff;
+}
+.new-session-search:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.new-session-search svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  color: var(--muted);
+}
+.new-session-search input {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+.new-session-projects {
+  max-height: min(280px, 38dvh);
+  margin-top: 8px;
+  overflow-y: auto;
+  border-block: 1px solid var(--line);
+  padding: 4px 0;
+}
+.new-session-projects > button {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 26px minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  padding: 7px 8px;
+  text-align: left;
+}
+.new-session-projects > button.active {
+  background: #edf0f8;
+}
+.new-session-projects > button > span:last-child {
+  min-width: 0;
+}
+.new-session-projects strong,
+.new-session-projects small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.new-session-projects strong {
+  font-size: 12px;
+  font-weight: 600;
+}
+.new-session-projects small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.new-session-projects p {
+  margin: 0;
+  padding: 16px 8px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+.new-session-project-icon {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+}
+.new-session-project-icon img,
+.new-session-project-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.new-session-dialog .actions {
+  margin-top: 14px;
+}
+.new-session-dialog .primary {
+  color: #fff;
+  background: var(--accent);
+}
+.new-session-dialog .primary:hover {
+  background: #4056b1;
+}
+.utility-panel dl {
+  display: grid;
+  grid-template-columns: minmax(90px, auto) minmax(0, 1fr);
+  gap: 9px 16px;
+  margin: 18px 0 0;
+}
+.utility-panel dt {
+  color: var(--muted);
+  font-size: 11px;
+}
+.utility-panel dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+.model-scope > input {
+  width: 100%;
+}
+.model-scope-list {
+  max-height: 42dvh;
+  margin-top: 10px;
+  overflow: auto;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.model-scope-list label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 4px;
+}
+.model-scope-list label + label {
+  border-top: 1px solid #f0f1f4;
+}
+.model-scope-list input {
+  margin: 0;
+}
+.model-scope-list span {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+.model-scope-list strong,
+.model-scope-list small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.model-scope-list strong {
+  font-size: 12px;
+}
+.model-scope-list small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.modal h2 {
+  font-size: 18px;
+  margin: 0;
+}
+.modal h3 {
+  font-size: 13px;
+  margin-top: 24px;
+}
+.modal label {
+  display: grid;
+  gap: 7px;
+  font-size: 12px;
+}
+.modal textarea {
+  display: block;
+  border: 1px solid var(--line);
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+.import-preview {
+  display: grid;
+  gap: 5px;
+  margin: 8px 0 18px;
+}
+.import-preview label {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  padding: 7px;
+  border-radius: 7px;
+  background: #f7f8fa;
+}
+.import-preview label > span,
+.import-preview small {
+  display: block;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.import-preview small {
+  margin-top: 3px;
+  color: var(--muted);
+}

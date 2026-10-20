@@ -1,0 +1,11 @@
+.heading > span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.connection {
+  color: #43745e;
+  font-size: 11px;
+}
+.connection.offline {
+  color: #93531e;
+}

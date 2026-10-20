@@ -1,0 +1,10 @@
+import "./features/workspace/details-shell.css";
+import "./features/workspace/file-browser.css";
+import "./features/workspace/changes.css";
+import "./features/workspace/diff-preview.css";
+import "./features/workspace/details-terminal.css";
+import "./features/workspace/changes-patches.css";
+import "./features/workspace/diff-preview-late.css";
+import "./features/workspace/changes-actions.css";
+export { default } from "./features/workspace/details.js";
+export { isEditingTarget } from "./features/workspace/details-helpers.js";

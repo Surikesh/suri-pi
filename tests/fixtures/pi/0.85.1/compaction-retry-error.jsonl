@@ -1,0 +1,5 @@
+{"type": "agent_start"}
+{"type": "compaction_start"}
+{"type": "compaction_end", "error": "synthetic error"}
+{"type": "message_end", "message": {"role": "assistant", "content": [], "stopReason": "error"}}
+{"type": "agent_settled"}

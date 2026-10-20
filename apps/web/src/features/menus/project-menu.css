@@ -1,0 +1,4 @@
+.project-menu {
+  max-height: calc(100vh - 24px);
+  overflow-y: auto;
+}

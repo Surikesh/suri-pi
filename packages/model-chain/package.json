@@ -1,0 +1,11 @@
+{
+  "name": "@suri-pi/model-chain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./adapters": "./src/adapters.ts",
+    "./broker": "./src/broker.ts"
+  }
+}

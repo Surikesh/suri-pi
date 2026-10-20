@@ -1,0 +1,12 @@
+{
+  "name": "@suri/protocol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./updates": "./src/updates.ts",
+    "./update-checkpoint": "./src/update-checkpoint.ts",
+    "./update-commands": "./src/update-commands.ts"
+  }
+}

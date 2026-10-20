@@ -1,0 +1,217 @@
+.file-browser {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+}
+.file-navigation {
+  min-height: 100px;
+  flex: 1;
+  overflow: auto;
+  padding: 10px;
+}
+.has-preview .file-navigation {
+  flex: 0 1 35%;
+}
+.workspace-details .file {
+  gap: 9px;
+  min-height: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.workspace-details .file:hover {
+  background: #e9ebf2;
+}
+.workspace-details .file.selected {
+  background: #e5e8f0;
+}
+.workspace-details .file > span:nth-child(3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.file-type-icon {
+  --file-icon-paper: #f5f6f9;
+  --file-icon-edge: #d5d9e2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  min-width: 21px;
+  height: 21px;
+  color: #626978;
+}
+.file-type-icon > svg {
+  display: block;
+  flex: none;
+}
+.file-type-icon.markdown,
+.file-type-icon.text,
+.file-type-icon.log {
+  --file-icon-paper: #f1f4f8;
+  --file-icon-edge: #cbd2dd;
+  color: #4f5d73;
+}
+.file-type-icon.image {
+  --file-icon-paper: #f1f5fc;
+  --file-icon-edge: #ccd7e9;
+  color: #637bad;
+}
+.file-type-icon.pdf {
+  --file-icon-paper: #fff1f1;
+  --file-icon-edge: #efcaca;
+  color: #c33d45;
+}
+.file-type-icon.word {
+  color: #2867b2;
+}
+.file-type-icon.excel {
+  color: #23845b;
+}
+.file-type-icon.ppt {
+  color: #c45b32;
+}
+.file-type-icon.archive {
+  color: #a06b26;
+}
+.file-type-icon.audio,
+.file-type-icon.video {
+  color: #795da8;
+}
+.file-type-icon.font {
+  color: #44526a;
+}
+.file-type-icon.directory {
+  color: #757987;
+}
+.file-type-icon.directory svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.workspace-details .file-preview {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.workspace-details .file-preview-header {
+  flex-wrap: wrap;
+  padding: 9px 13px;
+  border-bottom: 1px solid var(--line);
+  gap: 7px;
+}
+.workspace-details .file-preview-header > strong {
+  font-size: 12px;
+  flex-basis: 100%;
+}
+.workspace-details .file-preview-header > div {
+  flex-wrap: wrap;
+}
+.workspace-details .file-preview-header button {
+  font-size: 11px;
+}
+.file-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+}
+.file-edit-status {
+  margin: 0;
+  padding: 6px 13px;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+}
+.workspace-details .file-preview > .highlighted-textarea {
+  flex: 1;
+  width: 100%;
+  min-height: 260px;
+}
+.workspace-details .highlighted-textarea pre,
+.workspace-details .highlighted-textarea textarea {
+  padding: 14px 16px;
+  font:
+    11px/1.7 ui-monospace,
+    monospace;
+  white-space: pre;
+}
+.file-view-mode {
+  display: flex;
+  gap: 4px;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.file-view-mode button {
+  font-size: 11px;
+  padding: 4px 8px;
+  min-height: 26px;
+  color: var(--muted);
+}
+.file-view-mode [aria-pressed="true"] {
+  color: var(--accent);
+  background: #e5e8f0;
+}
+.file-document {
+  overflow: auto;
+  padding: 10px 22px 28px;
+  color: #4f5366;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.file-document > :first-child {
+  margin-top: 0;
+}
+.file-document h1 {
+  font-size: 23px;
+  line-height: 1.35;
+}
+.file-document h2 {
+  font-size: 19px;
+  margin-top: 1.5em;
+}
+.file-document h3 {
+  font-size: 16px;
+}
+.file-document p,
+.file-document ul,
+.file-document ol {
+  margin-block: 1em;
+}
+.file-document img {
+  max-width: 100%;
+}
+.file-document table {
+  display: block;
+  overflow: auto;
+}
+.file-document pre {
+  overflow: auto;
+}
+.file-source {
+  flex: 1;
+  overflow: auto;
+  margin: 0;
+  padding: 12px 0;
+  border-radius: 0;
+  background: transparent;
+  font:
+    11px/1.7 ui-monospace,
+    monospace;
+  white-space: pre;
+  overflow-wrap: normal;
+}
+.file-line-number {
+  display: inline-block;
+  width: 42px;
+  padding-right: 12px;
+  text-align: right;
+  color: #9296a4;
+  user-select: none;
+}

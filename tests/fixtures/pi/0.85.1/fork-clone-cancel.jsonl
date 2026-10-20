@@ -1,0 +1,2 @@
+{"type": "response", "command": "fork", "success": true, "data": {"cancelled": true}}
+{"type": "response", "command": "get_state", "success": true, "data": {"sessionId": "fixture"}}

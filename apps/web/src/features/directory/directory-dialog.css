@@ -1,0 +1,111 @@
+.directory-dialog {
+  width: min(560px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+}
+.dialog-description {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 8px 0 16px;
+}
+.directory-location {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+.directory-location label {
+  flex: 1;
+  min-width: 0;
+}
+.directory-location input {
+  width: 100%;
+}
+.directory-toolbar {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 6px;
+}
+.directory-list {
+  height: clamp(120px, 28vh, 260px);
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 4px;
+}
+.directory-list button {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.directory-list button span:nth-child(2) {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+.directory-folder-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  color: var(--muted);
+}
+.directory-list p {
+  color: var(--muted);
+  font-size: 13px;
+  padding: 8px;
+}
+.directory-empty button,
+.directory-error button {
+  width: auto;
+  color: var(--accent);
+  font-weight: 500;
+}
+.directory-empty button {
+  margin: 0 8px 8px;
+}
+.directory-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 10px 0;
+}
+.directory-error p {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.modal .checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.checkbox-row input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  flex: none;
+}
+.directory-selection {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 16px;
+}
+.directory-selection strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--text);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+.directory-dialog .primary {
+  background: var(--accent);
+  color: white;
+}
+.directory-dialog .primary:disabled {
+  background: transparent;
+  color: var(--muted);
+  opacity: 1;
+}

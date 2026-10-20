@@ -1,0 +1,11 @@
+{
+  "id": "split-utf8-lf-crlf-unicode",
+  "version": "0.85.1",
+  "commit": "d981de1229ef899957bbe968bc8dcda02a21f477",
+  "provenance": "independently authored synthetic fixture; fixture_exit is a process-driver directive, not a Pi event",
+  "driver": "decoder",
+  "expected": {
+    "outcome": "completed",
+    "unicode": true
+  }
+}

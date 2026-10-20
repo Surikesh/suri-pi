@@ -1,0 +1,1 @@
+export const LIVE_TRANSCRIPT_MESSAGE_LIMIT = 40;

@@ -1,0 +1,2 @@
+{"type": "response", "command": "get_state", "success": true, "data": {"sessionId": "fixture", "sessionFile": null, "messageCount": 0}}
+{"type": "response", "command": "get_messages", "success": true, "data": {"messages": []}}

@@ -1,0 +1,10 @@
+{
+  "id": "extension-entry-after-search",
+  "version": "0.85.1",
+  "provenance": "Synthetic payload; event type confirmed in existing Suri catalog and isolated real Pi appendEntry extension-command smoke (no model execution).",
+  "expected": {
+    "outcome": "completed",
+    "toolPhase": "completed",
+    "noticeCount": 0
+  }
+}

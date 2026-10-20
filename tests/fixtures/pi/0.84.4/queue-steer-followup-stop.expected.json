@@ -1,0 +1,10 @@
+{
+  "id": "queue-steer-followup-stop",
+  "version": "0.84.4",
+  "commit": "b79e4cc834970cca69daebffab7df1da7d1e52c4",
+  "provenance": "independently authored synthetic fixture",
+  "expected": {
+    "outcome": "cancelled",
+    "queueLength": 0
+  }
+}

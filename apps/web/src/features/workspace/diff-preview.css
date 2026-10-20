@@ -1,0 +1,46 @@
+.diff-preview {
+  flex: 1;
+  margin: 0;
+  padding: 8px 0 24px;
+  border-radius: 0;
+  background: #fff;
+  white-space: pre;
+  overflow-wrap: normal;
+  font:
+    10px/1.65 ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+}
+.diff-line {
+  display: flex;
+  min-width: max-content;
+  padding-right: 14px;
+}
+.diff-line > span:last-child {
+  white-space: pre;
+}
+.diff-marker {
+  width: 22px;
+  flex: 0 0 22px;
+  color: #9298a4;
+  text-align: center;
+  user-select: none;
+}
+.diff-line.add {
+  background: #eaf7ef;
+  color: #205e3b;
+}
+.diff-line.remove {
+  background: #fbeeee;
+  color: #843737;
+}
+.diff-line.hunk {
+  margin-block: 5px;
+  color: #5269b0;
+  background: #eef1fa;
+}
+.diff-line.file {
+  color: #505866;
+  font-weight: 600;
+}

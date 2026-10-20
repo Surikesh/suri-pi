@@ -1,0 +1,5 @@
+{"type": "agent_start"}
+{"type": "queue_update", "steering": ["steer"], "followUp": ["later"]}
+{"type": "queue_update", "steering": [], "followUp": []}
+{"type": "message_end", "message": {"role": "assistant", "content": [], "stopReason": "aborted"}}
+{"type": "agent_settled"}

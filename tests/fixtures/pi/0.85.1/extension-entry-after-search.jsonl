@@ -1,0 +1,7 @@
+{"type":"agent_start"}
+{"type":"tool_execution_start","toolCallId":"search-1","toolName":"web_search","args":{}}
+{"type":"tool_execution_update","toolCallId":"search-1","toolName":"web_search","partialResult":{"content":[{"type":"text","text":"Searching"}]}}
+{"type":"entry_appended","entry":{"type":"custom","customType":"search-state","data":"synthetic-secret"}}
+{"type":"tool_execution_end","toolCallId":"search-1","toolName":"web_search","result":{"content":[{"type":"text","text":"Search complete"}]},"isError":false}
+{"type":"agent_end"}
+{"type":"agent_settled"}

@@ -1,0 +1,115 @@
+.earlier-messages {
+  display: block;
+  margin: 0 auto 18px;
+  color: #596273;
+  background: #f4f5f7;
+  font-size: 12px;
+}
+.subagent-status {
+  margin: 12px 0 4px;
+  padding: 10px 2px 0;
+  border-top: 1px solid var(--line);
+  color: #4d5663;
+  font-size: 12px;
+}
+.subagent-heading,
+.subagent-line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.subagent-heading {
+  justify-content: space-between;
+  color: #59616d;
+}
+.subagent-heading strong {
+  color: #303640;
+  font-size: 13px;
+}
+.subagent-list {
+  margin: 5px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.subagent-row {
+  min-width: 0;
+  margin: 0;
+  padding-top: 5px;
+}
+.subagent-line {
+  min-width: 0;
+}
+.subagent-dot {
+  flex: none;
+  align-self: center;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #a3a9b2;
+}
+.subagent-dot.running {
+  background: #5067bc;
+}
+.subagent-dot.failed,
+.subagent-dot.rejected {
+  background: #b53a32;
+}
+.subagent-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #303640;
+}
+.subagent-state {
+  flex: none;
+  margin-left: auto;
+  color: #636d7a;
+}
+.subagent-state.running {
+  color: #5067bc;
+}
+.subagent-state.failed,
+.subagent-state.rejected {
+  color: #a43630;
+}
+.subagent-activity {
+  padding-left: 14px;
+  color: #626b78;
+  overflow-wrap: anywhere;
+}
+.subagent-omitted {
+  margin: 8px 0 0;
+  color: #626b78;
+}
+.notice {
+  display: flex;
+  min-height: 30px;
+  margin: 8px 0 0;
+  padding: 5px 6px 5px 10px;
+  border: 1px solid #ead9c8;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: #79451f;
+  background: #fffaf5;
+  font-size: 12px;
+  line-height: 1.35;
+}
+.notice.blocking {
+  border-color: #e5c5c2;
+  color: #8c3029;
+  background: #fff7f6;
+}
+.notice-dismiss {
+  width: 26px;
+  min-width: 26px;
+  min-height: 26px;
+  padding: 0;
+  color: currentColor;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+}
+.notice-dismiss:hover {
+  background: #0000000a;
+}

@@ -1,0 +1,32 @@
+.catalog-dialog {
+  max-height: 85vh;
+  overflow: auto;
+}
+.catalog-dialog form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 8px;
+  margin: 12px 0;
+}
+.catalog-dialog label {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.catalog-dialog input {
+  max-width: 100%;
+}
+.catalog-workspace {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.catalog-workspace span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.catalog-workspace small {
+  display: block;
+}

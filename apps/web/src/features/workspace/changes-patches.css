@@ -1,0 +1,109 @@
+/* Review surfaces retain the quiet workspace palette; only changed rows tint. */
+.preserved-pane {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+.preserved-pane[hidden] {
+  display: none;
+}
+.changes-current {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  background: #f7f8fb;
+  font-size: 11px;
+  color: #606775;
+}
+.changes-current strong {
+  font-size: 12px;
+  color: #202329;
+  font-weight: 600;
+}
+.changes-current button {
+  align-self: flex-start;
+  margin-top: 4px;
+  font-size: 11px;
+}
+.change-patches {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+.diff-section h3 {
+  margin: 0;
+  padding: 9px 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #555e6d;
+  background: #f7f8fb;
+  border-bottom: 1px solid var(--line);
+}
+.binary-image-preview {
+  display: flex;
+  min-height: 100%;
+  margin: 0;
+  flex-direction: column;
+  background: #f7f8fb;
+}
+.binary-image-canvas {
+  display: grid;
+  min-height: 240px;
+  flex: 1;
+  place-items: center;
+  padding: 20px;
+  background: #f1f2f5;
+}
+.binary-image-canvas img {
+  display: block;
+  max-width: 100%;
+  max-height: min(62vh, 720px);
+  object-fit: contain;
+  box-shadow: 0 2px 12px rgb(31 36 48 / 14%);
+}
+.binary-image-preview figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 18px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  font-size: 11px;
+}
+.binary-image-preview figcaption strong {
+  color: #30343c;
+  font-weight: 500;
+}
+.binary-file-state {
+  display: grid;
+  width: min(100% - 24px, 480px);
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 12px;
+  align-self: flex-start;
+  margin: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: #5f6774;
+  background: #f8f9fb;
+  font-size: 11px;
+}
+.binary-file-state strong {
+  color: #30343c;
+  font-size: 12px;
+  font-weight: 600;
+}
+.binary-file-state > span {
+  white-space: nowrap;
+}
+.binary-file-state small {
+  grid-column: 1 / -1;
+  color: #6b7280;
+  font-size: 11px;
+  line-height: 1.45;
+}

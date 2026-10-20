@@ -1,0 +1,222 @@
+.changes-review {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  flex-direction: column;
+  background: #fff;
+}
+.changes-sidebar {
+  flex: 0 0 auto;
+  max-height: 36%;
+  overflow: auto;
+  border-bottom: 1px solid var(--line);
+  background: #f7f8fb;
+}
+.changes-summary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 4px 6px;
+  min-height: 62px;
+  padding: 7px 8px;
+  color: #676d7a;
+  background: #f7f8fb;
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+}
+.changes-filter {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  align-items: center;
+}
+.changes-filter svg {
+  position: absolute;
+  left: 8px;
+  width: 14px;
+  height: 14px;
+  color: #7a8290;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+.changes-filter input {
+  width: 100%;
+  height: 29px;
+  padding: 4px 24px 4px 27px;
+  border: 1px solid #d9dde6;
+  border-radius: 6px;
+  outline: none;
+  color: #282c34;
+  background: #fff;
+  font: inherit;
+}
+.changes-filter input::placeholder {
+  color: #7a8290;
+}
+.changes-filter input:hover {
+  border-color: #c8ceda;
+}
+.changes-filter input:focus {
+  border-color: #788bd6;
+  box-shadow: 0 0 0 2px rgb(91 117 220 / 14%);
+}
+.changes-count {
+  grid-column: 1 / -1;
+  padding-inline: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.changes-summary button {
+  min-height: 28px;
+  width: 28px;
+  padding: 3px;
+  font-size: 15px;
+}
+.changes-filter-empty {
+  padding-block: 20px;
+}
+.change-file-list {
+  padding: 5px;
+}
+.change-file {
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 5px 8px;
+  text-align: left;
+}
+.change-file[aria-selected="true"] {
+  background: #e7eaf2;
+}
+.change-file[aria-selected="true"] small {
+  color: #566173;
+}
+.change-file-copy {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+}
+.change-file-copy strong,
+.change-file-copy small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.change-file-copy strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+.change-file-copy small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.change-code {
+  flex: none;
+  width: 16px;
+  color: #866a12;
+  font:
+    600 10px/1 ui-monospace,
+    monospace;
+  text-align: center;
+}
+.change-code.a,
+.change-code.u {
+  color: #23804b;
+}
+.change-code.d {
+  color: #b64747;
+}
+.change-preview {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  flex-direction: column;
+  background: #fff;
+}
+.change-preview-header {
+  display: flex;
+  min-height: 48px;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.change-preview-header > div:first-child {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: baseline;
+  gap: 9px;
+}
+.change-preview-header strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 600;
+}
+.change-preview-header small {
+  display: flex;
+  flex: none;
+  gap: 6px;
+  font:
+    10px/1 ui-monospace,
+    monospace;
+}
+.diff-additions {
+  color: #237c49;
+}
+.diff-deletions {
+  color: #b44747;
+}
+.change-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.change-actions button {
+  min-height: 25px;
+  padding: 3px 6px;
+  color: #5d6471;
+  font-size: 10px;
+}
+.change-notice {
+  margin: 0;
+  padding: 5px 12px;
+  color: #5c6472;
+  background: #f7f8fb;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+}
+.changes-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 24px 14px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 11px;
+}
+.changes-empty strong {
+  color: #4b515d;
+  font-size: 12px;
+  font-weight: 500;
+}
+.changes-empty-preview {
+  margin: auto;
+}

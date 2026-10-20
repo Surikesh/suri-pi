@@ -1,0 +1,10 @@
+{
+  "id": "text-tool-settle",
+  "version": "0.85.1",
+  "commit": "d981de1229ef899957bbe968bc8dcda02a21f477",
+  "provenance": "independently authored synthetic fixture",
+  "expected": {
+    "outcome": "completed",
+    "toolPhase": "completed"
+  }
+}

@@ -1,0 +1,13 @@
+.error-banner {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  color: #963d32;
+  background: #fff1ee;
+  font-size: 12px;
+}
+.error-banner > span {
+  overflow-wrap: anywhere;
+}

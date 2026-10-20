@@ -1,0 +1,2 @@
+{"type": "future_event", "headers": {"Authorization": "synthetic-secret"}}
+{"type": "tool_execution_end", "toolCallId": "unknown", "toolName": "future", "result": {"content": [{"type": "future"}]}, "isError": true}

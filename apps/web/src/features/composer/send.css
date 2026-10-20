@@ -1,0 +1,21 @@
+.send-controls select {
+  font-size: 11px;
+}
+.send,
+.stop {
+  border-radius: 50%;
+  background: #202329;
+  color: white;
+  width: 38px;
+  height: 38px;
+  min-height: 38px;
+  flex: none;
+  padding: 7px;
+}
+.stop {
+  background: #f6e6e4;
+  color: #a13f35;
+}
+.send:hover {
+  background: #111318;
+}

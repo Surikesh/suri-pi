@@ -1,0 +1,43 @@
+.message-changed-files {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 12px;
+  color: #7b828e;
+  font-size: 12px;
+}
+.message-changed-label {
+  flex: none;
+  padding-top: 4px;
+}
+.message-changed-links {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 2px 5px;
+}
+.message-file-link {
+  min-width: 0;
+  max-width: min(360px, 100%);
+  min-height: 25px;
+  justify-content: flex-start;
+  gap: 4px;
+  padding: 2px 4px;
+  color: var(--accent);
+  font-size: 12px;
+}
+.message-file-link .file-type-icon {
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  color: currentColor;
+}
+.message-file-link .file-type-icon svg {
+  width: 16px;
+  height: 16px;
+}
+.message-file-link > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

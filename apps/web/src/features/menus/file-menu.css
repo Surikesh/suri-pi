@@ -1,0 +1,20 @@
+.file-context-menu > strong {
+  display: block;
+  overflow: hidden;
+  padding: 7px 8px 8px;
+  border-bottom: 1px solid var(--line);
+  color: #4e5561;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 600;
+}
+.file-menu-status {
+  margin: 5px 4px;
+  padding: 6px;
+  color: #5d6572;
+  background: #f3f5f8;
+  border-radius: 5px;
+  font-size: 10px;
+  line-height: 1.4;
+}

@@ -1,0 +1,167 @@
+.composer-rail {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  max-width: 848px;
+  padding: 4px 24px 13px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  background: transparent;
+}
+.composer-rail > * {
+  pointer-events: auto;
+}
+.composer {
+  position: relative;
+  border: 1px solid #d8dce5;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 8px 24px #2023290a;
+  padding: 14px 15px 12px;
+}
+.completion {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: calc(100% + 7px);
+  z-index: 7;
+  max-height: 280px;
+  overflow: auto;
+  padding: 6px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  box-shadow: 0 12px 38px #20232922;
+}
+.completion > span,
+.completion > p {
+  display: block;
+  margin: 0;
+  padding: 8px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.completion button {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  width: 100%;
+  justify-content: stretch;
+  text-align: left;
+  gap: 10px;
+}
+.completion button[aria-selected="true"] {
+  background: #eef1f8;
+}
+.completion button strong,
+.completion button small {
+  white-space: nowrap;
+}
+.completion button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+}
+.completion button small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.completion {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: calc(100% - 2px);
+  z-index: 7;
+  max-height: 280px;
+  overflow: auto;
+  padding: 6px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 10px 32px #20232922;
+}
+.completion > span,
+.completion > p {
+  display: block;
+  margin: 0;
+  padding: 7px 9px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.completion button {
+  display: grid;
+  grid-template-columns: minmax(100px, auto) 1fr auto;
+  width: 100%;
+  justify-content: stretch;
+  text-align: left;
+  font-size: 11px;
+}
+.completion button[aria-selected="true"] {
+  background: #eef1f8;
+}
+.completion button strong,
+.completion button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.completion button small {
+  color: var(--muted);
+}
+.composer textarea {
+  width: 100%;
+  height: 58px;
+  min-height: 58px;
+  max-height: 116px;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  line-height: 1.5;
+  outline: none;
+  font-size: 14px;
+}
+.composer textarea::-webkit-scrollbar {
+  display: none;
+}
+.composer-controls {
+  display: flex;
+  align-items: center;
+}
+.model-controls,
+.send-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.model-controls {
+  order: -1;
+  margin-right: auto;
+  flex: none;
+}
+.send-controls {
+  justify-content: flex-end;
+  width: 100%;
+}
+.send-controls .picker > button {
+  font-size: 11px;
+  color: var(--muted);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.composer-round-action {
+  width: 36px;
+  height: 36px;
+  min-height: 36px;
+  flex: none;
+  padding: 0;
+  color: #48515d;
+  background: transparent;
+}
+.composer-round-action:hover {
+  background: transparent;
+  color: #202329;
+}

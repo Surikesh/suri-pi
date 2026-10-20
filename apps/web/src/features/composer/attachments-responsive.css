@@ -1,0 +1,26 @@
+@media (hover: hover) {
+  .attachment-card.image .attachment-remove {
+    opacity: 0;
+    transition: opacity 120ms ease-out;
+  }
+  .attachment-card.image:hover .attachment-remove,
+  .attachment-card.image:focus-within .attachment-remove {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .attachment-card.image {
+    width: 56px;
+    height: 56px;
+  }
+  .attachment-lightbox-backdrop {
+    padding: 12px;
+  }
+  .attachment-lightbox {
+    width: 100%;
+    height: min(760px, 90dvh);
+    padding: 10px;
+    border-radius: 13px;
+  }
+}
